@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://10.9.181.164:3306/pweb
+    url: jdbc:mysql://localhost:3306/pweb
     username: root
     password: 123456
   
