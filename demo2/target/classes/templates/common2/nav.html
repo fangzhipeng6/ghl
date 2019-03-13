@@ -1,0 +1,16 @@
+    <div class="row" th:fragment="nav(module)">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A9C8E7;">
+                <div class="navbar-nav">
+                    <a id="book" class="nav-item nav-link" th:href="@{/projects/projectslist}">前期管理</a>
+                    <a id="store" class="nav-item nav-link" th:href="@{/midmanage/user/premidlist}">中期管理</a>
+                    <a id="sale" class="nav-item nav-link" th:href="@{/termanage/user/preterlist}">结题管理</a>
+                </div>
+            </nav>
+        </div>
+        <script>
+            var module = '[[ ${module} ]]';
+            $("#" + module).addClass("active");
+        </script>
+    </div>
